@@ -1,0 +1,41 @@
+[project]
+name = "vision-toolkit"
+version = "0.1.0"
+description = "COCO tooling, geometry, image quality, and video-to-Zarr pipelines."
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "pyyaml",
+    "opencv-python",
+    "scipy",
+    "scikit-image",
+    "pandas",
+    "matplotlib",
+    "pycocotools",
+    "sortedcontainers",
+    "mmh3",
+    "bitarray",
+    "numba",
+    "networkx",
+    "pillow",
+    "plotly",
+    "tifffile",
+    "zarr",
+    "numcodecs",
+    "csbdeep",
+]
+
+[project.optional-dependencies]
+clustering = ["torch", "scikit-learn", "seaborn", "tqdm"]
+lens = ["lensfunpy", "imageio", "exifread", "iptcinfo3", "beautifulsoup4", "lxml"]
+
+[project.scripts]
+video-zarr = "vision_toolkit.video_zarr.__main__:main"
+lens-correct = "vision_toolkit.pipelines.lens_correction_pipeline:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/vision_toolkit"]
