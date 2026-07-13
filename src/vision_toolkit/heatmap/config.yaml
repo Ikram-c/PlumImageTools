@@ -1,0 +1,51 @@
+canvas:
+  width: 20
+  height: 10
+figure:
+  width: 1000
+  height: 800
+
+visualisation:
+  box_line_color: "rgba(255, 255, 255, 0.6)"
+  box_line_width: 2
+  box_opacity: 1
+  marker_color: "white"
+  marker_size: 8
+  marker_opacity: 0.8
+  marker_line_width: 1
+  marker_line_color: "black"
+  colorscale: "Viridis"
+  template: "plotly_dark"
+
+layout:
+  title: "Bounding Box Density Heatmap"
+  x_axis_title: "X Coordinate"
+  y_axis_title: "Y Coordinate"
+  colorbar_title: "Density"
+
+histogram:
+  bin_divisor: 0.5
+  default_sigma: 1.0
+
+smoothing:
+  low: 0.5
+  medium: 1.0
+  high: 2.0
+
+menu:
+  y_position: 1.15
+  bg_color: "rgba(0,0,0,0.5)"
+  border_color: "grey"
+  font_color: "white"
+  button_pad_r: 10
+  button_pad_t: 10
+  colorscale_x: 0.1
+  visibility_x: 0.5
+  smoothing_x: 0.9
+
+colorscales:
+  - "Viridis"
+  - "Plasma"
+  - "Inferno"
+  - "Magma"
+  - "Hot"

@@ -1,0 +1,8 @@
+gjk_2d:
+  max_iterations: 128
+  tolerance: 1.0e-6
+  use_nesterov_acceleration: false
+
+gjk_3d:
+  max_iterations: 20
+  epsilon: 1.19209290e-07

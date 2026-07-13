@@ -1,0 +1,22 @@
+defaults:
+  radius: 5
+  strength: 1.0
+  safety: 0.5
+  log_threshold: 2.0
+
+numerical:
+  epsilon_small: 1.0e-6
+  epsilon_tiny: 1.0e-8
+  epsilon_filter: 1.0e-4
+  clip_min: 0.0
+  clip_max_multiplier: 2.0
+  normalize_threshold: 1.0
+
+safety_blender:
+  threshold: 0.5
+  blend_min: 0.0
+  blend_max: 1.0
+
+kernel:
+  size_multiplier: 2
+  size_offset: 1
