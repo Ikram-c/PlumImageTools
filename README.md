@@ -1,6 +1,5 @@
-# PlumImageTools (formerly vision-toolkit)
+# Plum Image Tools
 
-# PlumImageTools (formerly vision-toolkit)
 
 A Python monorepo consolidating computer vision, geospatial, and dataset tooling into a single package with consistent architectural conventions. Built for marine science imaging pipelines but general-purpose across COCO dataset work, image quality analysis, geometric validation, and video-to-Zarr conversion.
 
